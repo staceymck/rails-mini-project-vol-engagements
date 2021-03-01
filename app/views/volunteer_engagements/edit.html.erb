@@ -1,0 +1,10 @@
+<h1>Edit Volunteer Engagement</h1>
+<%= form_for @volunteer_engagement do |f| %>
+  <%= f.label :date %>
+  <%= f.text_field :date %>
+  <%= f.label :volunteer %>
+  <%= f.text_field :volunteer %>
+  <%= f.label :nonprofit %>
+  <%= f.text_field :nonprofit %>
+  <%= f.submit %>
+<% end %>

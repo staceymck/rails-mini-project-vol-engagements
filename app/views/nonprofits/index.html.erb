@@ -1,0 +1,6 @@
+<h1>Cat Nonprofits</h1>
+<ul>
+<% @nonprofits.each do |nonprofit| %>
+  <li><%= link_to nonprofit.name, nonprofit_path(nonprofit) %></li><br>
+<% end %>
+</ul>

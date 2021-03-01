@@ -1,0 +1,8 @@
+<h1><%= @nonprofit.name %> - <%= @nonprofit.city %></h1>
+
+<h2>Volunteers</h2>
+<ul>
+  <% @nonprofit.volunteers.uniq.each do |vol| %>
+    <li><%= vol.name %></li>
+  <% end %>
+</ul>

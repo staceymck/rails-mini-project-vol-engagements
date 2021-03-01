@@ -1,0 +1,7 @@
+<h1><%= @volunteer.name %></h1>
+<h2>Volunteer Engagements</h2>
+<ul>
+  <% @volunteer.volunteer_engagements.each do |eng| %>
+    <li><%= eng.date %> - <%= eng.nonprofit %></li>
+  <% end %>
+</ul>

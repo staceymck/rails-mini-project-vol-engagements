@@ -1,0 +1,6 @@
+<h1>Volunteer Activities</h1>
+<ol>
+<% @volunteer_engagements.each do |engagement| %>
+  <li><%= engagement.volunteer.name %> - <%= engagement.nonprofit.name %> - <%= engagement.date.strftime('%m-%d-%Y') %> </li><br>
+<% end %>
+</ol>
